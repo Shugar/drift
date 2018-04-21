@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    
+    asdasdg adsa 
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
 }
 </script>
 
-
 <style scoped>
-
+  .hello {
+    font-family: 'DIN';
+  }
 </style>
