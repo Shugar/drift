@@ -11,6 +11,12 @@ export default {
 </script>
 
 <style>
+	@import 'normalize.css';
+
+*{
+	box-sizing: border-box;
+}
+
 @font-face {
 	font-family: 'DIN';
 	src: url('./assets/fonts/DINPro-CondensedBold.eot');
@@ -21,4 +27,22 @@ export default {
 	font-style: normal;
 }
 
+body {
+	font-family: 'DIN';
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
 </style>
