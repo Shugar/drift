@@ -1,29 +1,34 @@
 <template>
   <div class="header container">
     <ul class="main-nav__left">
-      <li class="nav__item">
-        <a href="#" class="nav__link">Bio</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">PHOTO</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Video</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">CALENDAR</a>
-      </li>
+      <logo />
+      <div class="main-nav__left-wrapper">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Bio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">PHOTO</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Video</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">CALENDAR</a>
+        </li>
+      </div>
     </ul>
     <ul class="main-nav__right">
-      <li class="nav__item">
-        <a href="#" class="nav__link">News</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Store</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Partners</a>
-      </li>
+      <div class="main-nav__right-wrapper">
+        <li class="nav__item">
+          <a href="#" class="nav__link">News</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Store</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Partners</a>
+        </li>
+      </div>
       <li class="nav__item nav__item-contact">
         <a href="#" class="nav__link">Contact</a>
       </li>
@@ -33,9 +38,12 @@
 
 <script>
 export default {
+  components: {
+    logo: () => import('@/components/Logo.vue')
+  },
+
   data () {
     return {
-
     }
   }
 }
@@ -43,27 +51,53 @@ export default {
 
 <style scoped>
   .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 83px;
+
+    z-index: 1;
   }
 
   .main-nav__left {
+    position: relative;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 54%;
-    padding-left: 22.2%;
-    padding-right: 12.2%;
+    max-width: 504px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16.5%;
+  }
 
-    font-size: 20px;
-    line-height: 23px; 
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .main-nav__left-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 262px;
+    width: 100%;
+  }
+
+  .nav__item {
+    padding-top: 83px;
   }
 
   .nav__link {
     text-transform: uppercase;
-    /* color: #ffffff; */
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
   }
 
   .main-nav__right {
@@ -75,8 +109,11 @@ export default {
     padding-right: 6.94%;
   }
 
-  .nav__item-contact {
-    padding-left: 30%;
+  .main-nav__right-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 220px;
+    width: 100%;
   }
-
 </style>

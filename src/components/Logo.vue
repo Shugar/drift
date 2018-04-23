@@ -6,12 +6,16 @@
 
 <script>
   export default {
-    
+
   }
 </script>
 
 <style scoped>
   .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100px;
     padding-top: 73px;
     padding-bottom: 33px;
