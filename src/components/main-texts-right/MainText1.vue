@@ -1,10 +1,12 @@
 <template>
   <div class="main-left">
     <div class="slider">
-      <div class="slider-foto">
-      </div>
+      <img src="@/assets/images/motorshow-img.png" key="1" v-if="count === 1" class="slider-foto">
+      <img src="@/assets/images/t-shirt-white.png" key="2" v-if="count === 2" class="slider-foto">
+      <img src="@/assets/images/motorshow-img.png" key="3" v-if="count === 3" class="slider-foto">
+      <img src="@/assets/images/motorshow-img.png" key="4" v-if="count === 4" class="slider-foto">
       <div class="slider-arrow__wrapper">
-        <div class="slider-arrow">
+        <div class="slider-arrow" @click="nextSlide">
         </div>
       </div>
     </div>
@@ -29,7 +31,21 @@
 
 <script>
   export default {
+    data() {
+      return {
+        count: 1
+      }
+    },
 
+    methods: {
+      nextSlide() {
+        if (this.count < 4) {
+          this.count++;
+        } else {
+          this.count = 1;
+        }
+      }
+    }
   }
 </script>
 
@@ -51,7 +67,6 @@
     width: 100%;
     min-height: 200px;
 
-    background: url('../../assets/images/motorshow-img.png') no-repeat center;
     background-size: cover;
   }
 

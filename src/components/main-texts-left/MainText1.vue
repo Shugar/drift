@@ -1,46 +1,31 @@
 <template>
   <div class="main-text">
-    <transition name="fade" mode="out-in">
-      <div class="main-text__big" key="1" v-if="count === 1">
+      <div class="main-text__big">
         <div class="main-text__big-item">
-          <img src="@/assets/images/drift.svg" class="main-text__big-item-img main-text__big-item-drift">
+          <transition name="fade">
+            <img src="@/assets/images/drift.svg" key="1" v-if="count === 1" class="main-text__big-item-img main-text__big-item-drift">
+            <div key="2" v-if="count === 2" />
+            <div key="3" v-if="count === 3" />
+            <div key="4" v-if="count === 4" />
+          </transition>
         </div>
         <div class="main-text__big-item">
-          <img src="@/assets/images/is-my.svg" class="main-text__big-item-img main-text__big-item-my">
+          <transition name="fade">
+            <img src="@/assets/images/is-my.svg" key="1" v-if="count === 1" class="main-text__big-item-img main-text__big-item-my">
+            <img src="@/assets/images/latest.svg" key="2" v-if="count === 2" class="main-text__big-item-img main-text__big-item-latest">
+            <img src="@/assets/images/new.svg" key="3" v-if="count === 3" class="main-text__big-item-img main-text__big-item-new">
+            <img src="@/assets/images/upcoming.svg" key="4" v-if="count === 4" class="main-text__big-item-img main-text__big-item-upcoming">
+          </transition>
         </div>
         <div class="main-text__big-item">
-          <img src="@/assets/images/therapy.svg" class="main-text__big-item-img main-text__big-item-therapy">
-        </div>
-      </div>
-
-      <div class="main-text__big" key="2" v-if="count === 2">
-        <div class="main-text__big-item">
-          <img src="@/assets/images/latest.svg" class="main-text__big-item-img main-text__big-item-latest">
-        </div>
-        <div class="main-text__big-item">
-          <img src="@/assets/images/photos.svg" class="main-text__big-item-img main-text__big-item-photos">
-        </div>
-      </div>
-
-      <div class="main-text__big" key="3" v-if="count === 3">
-        <div class="main-text__big-item">
-          <img src="@/assets/images/new.svg" class="main-text__big-item-img main-text__big-item-new">
-        </div>
-        <div class="main-text__big-item">
-          <img src="@/assets/images/videos.svg" class="main-text__big-item-img main-text__big-item-videos">
+          <transition name="fade">
+            <img src="@/assets/images/therapy.svg" key="1" v-if="count === 1" class="main-text__big-item-img main-text__big-item-therapy">
+            <img src="@/assets/images/photos.svg" key="2" v-if="count === 2" class="main-text__big-item-img main-text__big-item-photos">
+            <img src="@/assets/images/videos.svg" key="3" v-if="count === 3" class="main-text__big-item-img main-text__big-item-videos">
+            <img src="@/assets/images/events.svg" key="4" v-if="count === 4" class="main-text__big-item-img main-text__big-item-events">
+          </transition>
         </div>
       </div>
-
-      <div class="main-text__big" key="4" v-if="count === 4">
-        <div class="main-text__big-item">
-          <img src="@/assets/images/upcoming.svg" class="main-text__big-item-img main-text__big-item-upcoming">
-        </div>
-        <div class="main-text__big-item">
-          <img src="@/assets/images/events.svg" class="main-text__big-item-img main-text__big-item-events">
-        </div>
-      </div>
-    </transition>
-
     <div class="desc-wrapper">
       <div class="toggle">
         <div class="toggle__min-text">
@@ -49,48 +34,77 @@
           </div>
           <div class="toggle__min-text-background"></div>
         </div>
-        <div class="toggle__big-text">
-          Photos
+        <div class="toggle__big-text-wrapper">
+          <transition name="fade-more">
+            <div key="1" v-if="count === 1" class="toggle__big-text">
+              Photos
+            </div>
+            <div key="2" v-if="count === 2" class="toggle__big-text">
+              VIDEOS
+            </div>
+            <div key="3" v-if="count === 3" class="toggle__big-text">
+              calendar
+            </div>
+            <div key="4" v-if="count === 4" class="toggle__big-text">
+              bio
+            </div>
+          </transition>
         </div>
       </div>
-      <transition>
-        <div class="main-text__desc" name="qwer" mode="out-in" key="1" v-if="count === 1">
-          <div class="main-text__desc-item">
-            Alexander Dmitrenko, pilot
+      <div class="main-text__desc-wrapper">
+        <transition name="left">
+          <div class="main-text__desc" key="1" v-if="count === 1">
+            <div class="main-text__desc-item">
+              Alexander Dmitrenko, pilot
+            </div>
+            <div class="main-text__desc-item">
+              of the Russian Drift Series
+            </div>
           </div>
-          <div class="main-text__desc-item">
-            of the Russian Drift Series
+          <div class="main-text__desc" key="2" v-if="count === 2">
+            <div class="main-text__desc-item">
+              Photos from our
+            </div>
+            <div class="main-text__desc-item">
+              recent events
+            </div>
           </div>
-        </div>
-        <div class="main-text__desc" key="2" v-if="count === 2">
-          <div class="main-text__desc-item">
-            asdqwe qweqwda
+          <div class="main-text__desc" key="3" v-if="count === 3">
+            <div class="main-text__desc-item">
+              Newest videos right
+            </div>
+            <div class="main-text__desc-item">
+              from the race track
+            </div>
           </div>
-          <div class="main-text__desc-item">
-            of the Russian Drift Series
+          <div class="main-text__desc" key="4" v-if="count === 4">
+            <div class="main-text__desc-item">
+              Upcoming events
+            </div>
+            <div class="main-text__desc-item">
+              with Alex D
+            </div>
           </div>
-        </div>
-        <div class="main-text__desc" key="3" v-if="count === 3">
-          <div class="main-text__desc-item">
-            rqweas asdasqw
-          </div>
-          <div class="main-text__desc-item">
-            of the Russian Drift Series
-          </div>
-        </div>
-        <div class="main-text__desc" key="4" v-if="count === 4">
-          <div class="main-text__desc-item">
-            asdq qweqw
-          </div>
-          <div class="main-text__desc-item">
-            of the Russian Drift Series
-          </div>
-        </div>
+        </transition>
+      </div>
+    </div>
+    <div class="more-wrapper">
+      Learn more
+      <transition name="fade-more">
+        <a href="#" key="1" v-if="count === 1" class="main-text__more">
+          Learn more
+        </a>
+        <a href="#" key="2" v-if="count === 2" class="main-text__more">
+          Discover
+        </a>
+        <a href="#" key="3" v-if="count === 3" class="main-text__more">
+          Discover
+        </a>
+        <a href="#" key="4" v-if="count === 4" class="main-text__more">
+          Discover
+        </a>
       </transition>
     </div>
-    <a href="#" class="main-text__more">
-      Learn more
-    </a>
   </div>
 </template>
 
@@ -108,21 +122,11 @@
 
     methods: {
       nextSlide() {
-        let animationElements = Array.from(document.querySelectorAll('.main-text__big-item-img'));
-
-        animationElements.forEach((element) => {
-          element.classList.add('text-top');
-        })
-
         if (this.count < 4) {
-          this.count++
+          this.count++;
         } else {
-          this.count=1;
+          this.count = 1;
         }
-      },
-
-      beforeEnter() {
-        console.log(23);
       }
     }
   }
@@ -145,24 +149,30 @@
     flex-flow: row nowrap;
   }
 
-  .main-text__desc {
-    max-width: 255px;
-    width: 100%;
-    margin-left: 37.3%;
-    margin-bottom: 38px;
-
-    font-size: 24px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-
   .toggle {
     position: absolute;
     top: 0;
     left: 0;
+
+    max-width: 130px;
+    width: 100%;
+  }
+
+  .toggle__big-text-wrapper {
+    position: relative;
+    display: inline-block;
+
+    overflow: hidden;
+    min-height: 35px;
+    max-width: 130px;
+    width: 100%;
   }
 
   .toggle__big-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     font-size: 36px;
     color: #fff;
     text-transform: uppercase;
@@ -208,10 +218,40 @@
     min-height: 330px;
   }
 
+  .main-text__desc-wrapper {
+    position: relative;
+
+    max-width: 255px;
+    width: 100%;
+    min-height: 56px;
+    margin-left: 37.3%;
+    margin-bottom: 38px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+
+    overflow: hidden;
+  }
+
+  .main-text__desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .main-text__big-item {
+    position: relative;
+
     display: block;
     min-height: 80px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .main-text__big-item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .main-text__big-item:last-child {
@@ -263,7 +303,9 @@
     width: 100%;
   }
 
-  .main-text__more {
+  .more-wrapper {
+    position: relative;
+
     display: inline-block;
     padding: 0 2px;
     margin-left: 37.3%;
@@ -271,38 +313,58 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: transparent;
+
+    overflow: hidden;
+  }
+
+  .more-wrapper a {
+    display: inline-block;
+    padding: 0 2px;
 
     background: #683FFF;
   }
 
+  .main-text__more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+  }
+
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
+    transition: transform .3s;
   }
 
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
+  .fade-leave-to {
+    transform: translateY(-90px);
   }
 
-  .qwer-enter-active, .qwer-leave-active {
-    transition: opacity .5s;
+  .fade-enter {
+    transform: translateY(90px);
   }
 
-  .qwer-enter, .qwer-leave-to {
-    opacity: 0;
+  .left-enter-active, .left-leave-active {
+    transition: transform .3s;
   }
 
-  .text-top {
-    animation: text-top 1s forwards;
+  .left-leave-to {
+    transform: translateX(-255px);
   }
 
-  @keyframes text-top {
-    0% {
-      transform: translateY(0);
-    }
+  .left-enter {
+    transform: translateX(255px);
+  }
 
-    100% {
-      transform: translateY(80px);
-    }
+  .fade-more-enter-active, .fade-more-leave-active {
+    transition: transform .3s;
+  }
+
+  .fade-more-leave-to {
+    transform: translateY(-110%);
+  }
+
+  .fade-more-enter {
+    transform: translateY(110%);
   }
 </style>
