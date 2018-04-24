@@ -5,7 +5,7 @@
         <div class="main-slider-container">
           <MainSlider />
         </div>
-        <news />
+        <MainNews />
       </div>
   </div>
 </template>
@@ -18,7 +18,7 @@
       HeaderComponent: () => import('@/components/Header.vue'),
       Logo: () => import('@/components/Logo.vue'),
       MainSlider: () => import('@/components/MainSlider.vue'),
-      news: () => import('@/components/news.vue')
+      MainNews: () => import('@/components/MainNews.vue')
     }
   }
 </script>

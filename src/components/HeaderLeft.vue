@@ -1,0 +1,58 @@
+<template>
+  <div class="left__header">
+      <ul class="main-nav__left">
+      <logo />
+      <div class="main-nav__left-wrapper">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Bio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">PHOTO</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Video</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">CALENDAR</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</template>
+
+<script>
+  export default {
+    components: {
+      logo: () => import('@/components/Logo.vue')
+    }
+  }
+</script>
+
+<style scoped>
+  .main-nav__left {
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 37.3%;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  .main-nav__left-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 262px;
+    width: 100%;
+    padding-top: 83px;
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+</style>

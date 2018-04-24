@@ -42,9 +42,7 @@ export default {
     logo: () => import('@/components/Logo.vue')
   },
 
-  data () {
-    return {
-    }
+  data() {
   }
 }
 </script>
