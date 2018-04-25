@@ -13,8 +13,9 @@ export default {
 <style>
 	@import 'normalize.css';
 
-*{
+* {
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
 }
 
 @font-face {
