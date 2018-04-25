@@ -33,7 +33,7 @@
       }
     },
 
-    mounted() {
+    mounted () {
       this.$root.$on('nextSlide', () => {
         if (this.count < 4) {
           this.count++;

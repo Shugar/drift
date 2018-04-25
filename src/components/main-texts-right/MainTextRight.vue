@@ -108,6 +108,12 @@
           this.count = 1;
         }
       }
+    },
+
+    mounted () {
+      setInterval(() => {
+        this.nextSlide()
+      }, 4000)
     }
   }
 </script>

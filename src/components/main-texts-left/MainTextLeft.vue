@@ -111,6 +111,12 @@
 <script>
   export default {
     props: ['count'],
+
+    mounted () {
+      setInterval(() => {
+        this.$root.$emit('nextSlide')
+      }, 4000)
+    }
   }
 </script>
 
@@ -178,6 +184,22 @@
     cursor: pointer;
   }
 
+  @keyframes background {
+    0% {
+      /* transform: translateX(0%); */
+      width: 0%;
+    }
+
+    95% {
+      /* transform: translateX(100%); */
+      width: 100%;
+    }
+
+    100% {
+      width: 0%;
+    }
+  }
+
   .toggle__min-text-background {
     display: block;
     position: absolute;
@@ -186,6 +208,7 @@
     height: 100%;
     width: 100%;
     background: #683FFF;
+    animation: background 4s infinite;
   }
 
   .main-text__desc-item:first-child {
