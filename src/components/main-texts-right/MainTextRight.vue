@@ -17,6 +17,7 @@
     <div class="text-block">
       <div class="text-block__desc-wrapper">
         <transition name="fade-text">
+
           <div class="text-block__desc" key="1" v-if="count === 1">
             <div class="text-block__item">
               MotorShow
@@ -43,10 +44,10 @@
 
           <div class="text-block__desc" key="3" v-if="count === 3">
             <div class="text-block__item">
-              Sochi, closing 
+              Sochi, closing
             </div>
             <div class="text-block__item">
-              of the season 
+              of the season
             </div>
             <div class="text-block__item">
               2017 RDS
@@ -64,6 +65,7 @@
               BLACK
             </div>
           </div>
+
         </transition>
       </div>
       <div class="text-block__date-wrapper">
@@ -236,7 +238,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-top: auto; 
+    margin-top: auto;
 
     font-size: 36px;
     color: #ffffff;

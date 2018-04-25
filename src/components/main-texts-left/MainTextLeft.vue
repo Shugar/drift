@@ -29,7 +29,7 @@
     <div class="desc-wrapper">
       <div class="toggle">
         <div class="toggle__min-text">
-          <div ref="next" @click="nextSlide" class="toggle__min-text-text">
+          <div ref="next" @click="$root.$emit('nextSlide')" class="toggle__min-text-text">
             next up
           </div>
           <div class="toggle__min-text-background"></div>
@@ -110,25 +110,7 @@
 
 <script>
   export default {
-    data() {
-      return {
-        count: 1
-      }
-    },
-
-    mounted() {
-
-    },
-
-    methods: {
-      nextSlide() {
-        if (this.count < 4) {
-          this.count++;
-        } else {
-          this.count = 1;
-        }
-      }
-    }
+    props: ['count'],
   }
 </script>
 

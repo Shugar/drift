@@ -1,21 +1,22 @@
 <template>
-  <div class="main-slider">
-    <header-left />
-    <div class="main-slider__container">
-      <main-text1 />
+    <div class="main-slider">
+      <header-left />
+      <div class="main-slider__container">
+        <main-text-left :count="count" />
+      </div>
+      <footer-left />
     </div>
-    <footer-left />
-  </div>
 </template>
 
 <script>
   export default {
-  components: {
-    HeaderLeft: () => import('@/components/HeaderLeft.vue'),
-    MainText1: () => import('@/components/main-texts-left/MainText1.vue'),
-    FooterLeft: () => import('@/components/FooterLeft.vue'),
-  },
+    components: {
+      HeaderLeft: () => import('@/components/HeaderLeft.vue'),
+      MainTextLeft: () => import('@/components/main-texts-left/MainTextLeft.vue'),
+      FooterLeft: () => import('@/components/FooterLeft.vue'),
+    },
 
+    props: ['count']
   }
 </script>
 <style scoped>

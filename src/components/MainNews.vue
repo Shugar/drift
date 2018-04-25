@@ -2,7 +2,7 @@
   <div class="news">
     <div class="news-container">
       <header-right />
-      <main-text1 />
+      <main-text-right />
       <footer-right />
     </div>
   </div>
@@ -12,7 +12,7 @@
   export default {
     components: {
       HeaderRight: () => import('@/components/HeaderRight.vue'),
-      MainText1: () => import('@/components/main-texts-right/MainText1.vue'),
+      MainTextRight: () => import('@/components/main-texts-right/MainTextRight.vue'),
       FooterRight: () => import('@/components/FooterRight.vue')
     }
   }

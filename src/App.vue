@@ -28,6 +28,8 @@ export default {
 }
 
 body {
+  background: #cccccc;
+
 	font-family: 'DIN';
 }
 
