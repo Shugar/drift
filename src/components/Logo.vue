@@ -28,4 +28,10 @@
     height: 34px;
     margin: 0 auto;
   }
+
+  @media (max-width: 420px) {
+    .logo {
+      padding-top: 53px;
+    }
+  }
 </style>

@@ -128,7 +128,6 @@
   .main-text__big {
     margin-left: 37.3%;
     margin-bottom: 40px;
-
   }
 
   .desc-wrapper {
@@ -371,5 +370,120 @@
 
   .fade-more-enter {
     transform: translateY(110%);
+  }
+
+  @media (max-width: 1024px) {
+    .main-text__big {
+      margin-left: 28.3%;
+      margin-bottom: 30px;
+    }
+
+    .main-text__desc-wrapper {
+      margin-left: 28.3%;
+    }
+
+    .more-wrapper {
+      margin-left: 28.3%;
+    }
+
+    .main-text__big-item {
+      margin-bottom: 30px;
+      min-height: 70px;
+    }
+
+    .main-text__big-item-drift {
+      max-width: 174px;
+    }
+
+    .main-text__big-item-my {
+      max-width: 165px;
+    }
+
+    .main-text__big-item-therapy {
+      max-width: 255px;
+    }
+
+    .main-text__big-item-latest {
+      max-width: 202px;
+    }
+
+    .main-text__big-item-photos {
+      max-width: 208px;
+    }
+
+    .main-text__big-item-new {
+      max-width: 111px;
+    }
+
+    .main-text__big-item-videos {
+      max-width: 208px;
+    }
+
+    .main-text__big-item-upcoming {
+      max-width: 285px;
+    }
+
+    .main-text__big-item-events {
+      max-width: 206px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .main-text__big {
+      margin-left: 0;
+      min-height: initial;
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    .main-text__desc-wrapper {
+      margin-left: 0;
+    }
+
+    .main-text__big-item {
+      min-height: 60px;
+    }
+
+    .more-wrapper {
+      margin-left: 0;
+    }
+
+    .main-text__big-item-drift {
+      max-width: 149px;
+    }
+
+    .main-text__big-item-my {
+      max-width: 141px;
+    }
+
+    .main-text__big-item-therapy {
+      max-width: 218px;
+    }
+
+    .main-text__big-item-latest {
+      max-width: 173px;
+    }
+
+    .main-text__big-item-photos {
+      max-width: 178px;
+    }
+
+    .main-text__big-item-new {
+      max-width: 95px;
+    }
+
+    .main-text__big-item-videos {
+      max-width: 178px;
+    }
+
+    .main-text__big-item-upcoming {
+      max-width: 244px;
+    }
+
+    .main-text__big-item-events {
+      max-width: 176px;
+    }
   }
 </style>

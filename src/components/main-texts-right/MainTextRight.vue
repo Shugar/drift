@@ -119,8 +119,11 @@
 </script>
 
 <style scoped>
-.main-left {
-    margin-top: 186px;
+  .main-left {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 
   .slider {

@@ -29,5 +29,16 @@
     width: 100%;
     padding-left: 15.1%;
     padding-bottom: 83px;
+
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1024px) {
+    .news {
+      display: none;
+    }
   }
 </style>

@@ -29,6 +29,10 @@
 </script>
 
 <style scoped>
+  .left__header {
+    min-height: 140px;
+  }
+
   .main-nav__left {
     position: relative;
 
@@ -54,5 +58,12 @@
     font-size: 20px;
     line-height: 23px;
     color: #ffffff;
+  }
+
+
+  @media (max-width: 1024px) {
+    .left__header {
+      display: none;
+    }
   }
 </style>

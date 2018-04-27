@@ -14,6 +14,14 @@
         <img src="../assets/images/facebook.svg">
       </div>
     </div>
+    <div class="footer-right">
+      <div class="footer-lang">
+        Ru-en
+      </div>
+      <div class="footer-made">
+        Made by Apus
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,17 +33,23 @@
 
 <style scoped>
   .footer {
+    display: none;
     position: relative;
     z-index: 1;
 
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     margin-top: 92px;
   }
 
+  .footer-left {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
   .share {
-    width: 37.3%;;
+    width: 28.3%;
 
     font-size: 20px;
     color: #E0E0E0;
@@ -51,9 +65,41 @@
     width: 100%;
   }
 
+  .footer-right {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: 460px;
+    justify-content: flex-end;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #E0E0E0;
+  }
+
+  .footer-lang {
+    margin-right: 60px;
+  }
+
   @media (max-width: 1024px) {
     .footer {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .footer {
+      margin-top: 55px;
+      justify-content: space-between;
+    }
+
+    .footer-right {
       display: none;
+    }
+
+    .share {
+      width: initial;
     }
   }
 </style>

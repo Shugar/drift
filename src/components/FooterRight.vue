@@ -22,7 +22,7 @@
 
   max-width: 460px;
   width: 100%;
-  margin-top: 151px;
+  margin-top: 30px;
   justify-content: space-between;
 
   font-size: 20px;

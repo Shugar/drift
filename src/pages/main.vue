@@ -119,4 +119,10 @@
   .fade-enter, .fade-leave-to {
     opacity: 0;
   }
+
+  @media (max-width: 1024px) {
+    .main-slider-container {
+      width: 100%;
+    }
+  }
 </style>
