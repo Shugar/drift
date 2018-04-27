@@ -111,9 +111,9 @@
     },
 
     mounted () {
-      setInterval(() => {
-        this.nextSlide()
-      }, 4000)
+      // setInterval(() => {
+      //   this.nextSlide()
+      // }, 4000)
     }
   }
 </script>
@@ -193,7 +193,7 @@
 
     max-width: 260px;
     width: 100%;
-    min-height: 137px;
+    min-height: 146px;
   }
 
   .text-block__desc {
@@ -202,12 +202,14 @@
     left: 0;
 
     font-size: 36px;
+    line-height: 27px;
     text-transform: uppercase;
     color: #ffffff;
   }
 
   .text-block__item {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    white-space: nowrap;
   }
 
   .text-block__item:last-child {
