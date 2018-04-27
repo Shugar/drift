@@ -77,6 +77,7 @@
     top: 76px;
     width: 28px;
     height: 28px;
+    cursor: pointer;
     background: url("../assets/images/menu-button.svg") no-repeat center / contain;
   }
 
