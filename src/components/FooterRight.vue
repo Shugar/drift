@@ -1,7 +1,7 @@
 <template>
   <div class="footer-left">
     <div class="footer-lang">
-      Ru-en
+      Ru — En
     </div>
     <div class="footer-made">
       Made by Apus

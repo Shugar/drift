@@ -48,6 +48,6 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 23px;
-    color: #ffffff;
+    color: #E0E0E0;
   }
 </style>

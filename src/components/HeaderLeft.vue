@@ -4,16 +4,16 @@
       <logo />
       <div class="main-nav__left-wrapper">
         <li class="nav__item">
-          <a href="#" class="nav__link">Bio</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 1 && '#FFF'}">Bio</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">PHOTO</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 2 && '#FFF'}">PHOTO</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Video</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 3 && '#FFF'}">Video</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">CALENDAR</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 4 && '#FFF'}">CALENDAR</a>
         </li>
       </div>
     </ul>
@@ -22,6 +22,7 @@
 
 <script>
   export default {
+    props: ['count'],
     components: {
       logo: () => import('@/components/Logo.vue')
     }
@@ -57,7 +58,9 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 23px;
-    color: #ffffff;
+    color: #E0E0E0;
+    transition: color .2s ease;
+    will-change: color;
   }
 
 

@@ -1,6 +1,6 @@
 <template>
     <div class="main-slider">
-      <header-left />
+      <header-left :count="count"/>
       <header-mobile />
       <div class="main-slider__container">
         <main-text-left :count="count" />

@@ -212,6 +212,7 @@
 
   .text-block__item:last-child {
     margin-bottom: 0;
+    color: #E0E0E0;
   }
 
   .text-block__date-wrapper {
