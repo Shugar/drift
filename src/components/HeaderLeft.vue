@@ -4,16 +4,16 @@
       <logo />
       <div class="main-nav__left-wrapper">
         <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 1 && '#FFF'}">Bio</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 1 ? '#FFF' : '#E0E0E0'}">Bio</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 2 && '#FFF'}">PHOTO</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 2 ? '#FFF' : '#E0E0E0'}">PHOTO</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 3 && '#FFF'}">Video</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 3 ? '#FFF' : '#E0E0E0'}">Video</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 4 && '#FFF'}">CALENDAR</a>
+          <a href="#" class="nav__link" :style="{color: this.count === 4 ? '#FFF' : '#E0E0E0'}">CALENDAR</a>
         </li>
       </div>
     </ul>
