@@ -102,6 +102,7 @@
 
     methods: {
       nextSlide() {
+        this.count = 1
         if (this.count < 4) {
           this.count++;
         } else {
@@ -135,6 +136,8 @@
 
     max-width: 380px;
     width: 100%;
+
+    margin-top: 8px;
   }
 
   .slider-foto-wrapper {
@@ -239,6 +242,8 @@
 
   .text-block__date {
     position: absolute;
+    text-align: right;
+    width: 100%;
     left: 0;
     top: 0;
 

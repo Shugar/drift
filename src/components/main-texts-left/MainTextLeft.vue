@@ -120,7 +120,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .main-text {
     width: 100%;
   }
@@ -183,21 +183,6 @@
     cursor: pointer;
   }
 
-  @keyframes background {
-    0% {
-      /* transform: translateX(0%); */
-      width: 0%;
-    }
-
-    95% {
-      /* transform: translateX(100%); */
-      width: 100%;
-    }
-
-    100% {
-      width: 0%;
-    }
-  }
 
   .toggle__min-text-background {
     display: block;
@@ -205,9 +190,13 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
+    width: 0%;
     background: #683FFF;
-    animation: background 4s infinite;
+    animation: background 4s ;
+
+    .background-active {
+      width: 100%;
+    }
   }
 
   .main-text__desc-item:first-child {

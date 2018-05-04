@@ -23,7 +23,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .footer {
     position: relative;
     z-index: 1;
@@ -32,6 +32,13 @@
     flex-flow: row wrap;
 
     margin-top: 92px;
+
+    // &:hover {
+    //   .share {
+    //     background: #683FFF;
+    //     transition: 0.5s background ease;
+    //   }
+    // }
   }
 
   .share {
@@ -47,8 +54,16 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    max-width: 100px;
-    width: 100%;
+    width: 100px;
+
+    &-item {
+      height: 20px;
+      border-radius: 6px;
+      transition: 0.5s background ease;
+      &:hover {
+        background: #683FFF;
+      }
+    }
   }
 
   @media (max-width: 1024px) {

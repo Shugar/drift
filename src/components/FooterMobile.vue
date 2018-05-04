@@ -19,7 +19,7 @@
         Ru-en
       </div>
       <div class="footer-made">
-        Made by Apus
+        Made by Apus AgencyMade by Apus
       </div>
     </div>
   </div>

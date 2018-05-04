@@ -31,6 +31,7 @@
     padding-bottom: 83px;
 
     height: 100vh;
+    min-height: 900px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;

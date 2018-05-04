@@ -62,7 +62,8 @@
     flex-flow: row nowrap;
     justify-content: flex-end;
 
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 900px;
     width: 55.2%;
   }
 
@@ -123,6 +124,7 @@
   @media (max-width: 1024px) {
     .main-slider-container {
       width: 100%;
+      min-height: auto;
     }
   }
 </style>

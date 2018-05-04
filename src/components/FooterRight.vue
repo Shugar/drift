@@ -4,7 +4,7 @@
       Ru — En
     </div>
     <div class="footer-made">
-      Made by Apus
+      Made by Apus Agency
     </div>
   </div>
 </template>
