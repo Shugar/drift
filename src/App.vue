@@ -29,8 +29,7 @@ export default {
 }
 
 body {
-  background: #cccccc;
-
+  background: #683FFF;
 	font-family: 'DIN';
 }
 

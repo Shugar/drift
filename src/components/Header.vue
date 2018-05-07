@@ -3,31 +3,31 @@
     <ul class="main-nav__left">
       <logo />
       <div class="main-nav__left-wrapper">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Bio</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">PHOTO</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Video</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">CALENDAR</a>
-        </li>
+        <router-link class="nav__item">
+          <a to="bio" class="nav__link">Bio</a>
+        </router-link>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">PHOTO</a>
+        </router-link>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">Video</a>
+        </router-link>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">CALENDAR</a>
+        </router-link>
       </div>
     </ul>
     <ul class="main-nav__right">
       <div class="main-nav__right-wrapper">
-        <li class="nav__item">
-          <a href="#" class="nav__link">News</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Store</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Partners</a>
-        </li>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">News</a>
+        </router-link>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">Store</a>
+        </router-link>
+        <router-link class="nav__item">
+          <a to="/#" class="nav__link">Partners</a>
+        </router-link>
       </div>
       <li class="nav__item nav__item-contact">
         <a href="#" class="nav__link">Contact</a>

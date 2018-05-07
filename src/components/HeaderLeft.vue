@@ -3,18 +3,18 @@
       <ul class="main-nav__left">
       <logo />
       <div class="main-nav__left-wrapper">
-        <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 1 ? '#FFF' : '#E0E0E0'}">Bio</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 2 ? '#FFF' : '#E0E0E0'}">PHOTO</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 3 ? '#FFF' : '#E0E0E0'}">Video</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link" :style="{color: this.count === 4 ? '#FFF' : '#E0E0E0'}">CALENDAR</a>
-        </li>
+        <router-link to='/bio' class="nav__item">
+          <span class="nav__link" :style="{color: this.count === 1 ? '#FFF' : '#E0E0E0'}">Bio</span>
+        </router-link>
+        <router-link to='/' class="nav__item">
+          <span class="nav__link" :style="{color: this.count === 2 ? '#FFF' : '#E0E0E0'}">PHOTO</span>
+        </router-link>
+        <router-link to='/' class="nav__item">
+          <span class="nav__link" :style="{color: this.count === 3 ? '#FFF' : '#E0E0E0'}">Video</span>
+        </router-link>
+        <router-link to='/' class="nav__item">
+          <span class="nav__link" :style="{color: this.count === 4 ? '#FFF' : '#E0E0E0'}">CALENDAR</span>
+        </router-link>
       </div>
     </ul>
   </div>
