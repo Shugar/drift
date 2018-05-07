@@ -33,7 +33,7 @@
     padding-right: 12.82%;
 
     height: 100vh;
-    min-height: 900px;
+    min-height: 640px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -73,7 +73,7 @@
     .main-slider {
       padding-bottom: 50px;
       height: initial;
-      min-height: initial;
+      min-height: auto;
     }
 
     .main-slider__container {

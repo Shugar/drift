@@ -31,13 +31,16 @@
     padding-bottom: 83px;
 
     height: 100vh;
-    min-height: 900px;
+    min-height: 640px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
   }
 
   @media (max-width: 1024px) {
+    .news-container {
+      min-height: auto;
+    }
     .news {
       display: none;
     }
