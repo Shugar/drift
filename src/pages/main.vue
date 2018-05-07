@@ -63,7 +63,7 @@
     justify-content: flex-end;
 
     height: 100vh;
-    min-height: 900px;
+    min-height: 640px;
     width: 55.2%;
   }
 
